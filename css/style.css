@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+* 
+{
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0; 
+    padding: 0;
+}
+
+p
+{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+    height: 100%;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+
+    background: #181818;
+
+    transition-duration: 0.3s;
+}
+
+.or
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+    border-radius: 50%;
+    background: #181818;
+
+    transition-duration: 0.4s;
+}
+/**************************************************/
+/***************   CHOICE ONE   *******************/
+/**************************************************/
+
+.choice_one
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+
+    background-image: url("../img/saucisson.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.choice_text_one
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px 10px;
+
+    position: fixed;
+
+    width: 390px;
+    height: 8%;
+
+    border-radius: 25px;
+    background: #161616;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background 0.3s, color 0.3s, rotate 0.8s;
+
+    transform: rotate(0deg);
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+/**************************************************/
+/***************   CHOICE TWO   *******************/
+/**************************************************/
+
+.choice_two
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+
+    background-image: url("../img/pain_au_chocolat.jpeg");
+    background-size: cover;
+}
+
+.choice_two img
+{
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    transition: 0.2s;
+}
+
+.choice_text_two
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px 10px;
+
+    position: fixed;
+
+    width: 390px;
+    height: 8%;
+
+    border-radius: 25px;
+    background: #161616;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background 0.3s, color 0.3s, rotate 0.8s;
+
+    transform: rotate(0deg);
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.choice_text_two:hover
+{
+    transform: rotate(-90deg);
+    color: black;
+    background: #ffffff;
+}
+
+.choice_text_one:hover
+{
+    color: black;
+    background: #ffffff;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+
+/**************************************************/
+/***************   MEDIA QUERIES   ****************/
+/**************************************************/
+
+@media only screen and (max-width: 1440px) 
+{
+
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .container
+    {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .choice_one
+    {
+        width: 100%;
+    }
+
+    .choice_two
+    {
+        width: 100%;
+    }
+
+    .or
+    {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
