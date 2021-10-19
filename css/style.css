@@ -15,6 +15,8 @@ p
     font-weight: 600;
 
     text-align: center;
+
+    padding: 10px;
 }
 
 html
@@ -25,6 +27,30 @@ html
 body
 {
     height: 100%;
+}
+
+.menu_button
+{
+    position: fixed;
+
+    display: block;
+
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: none;
+    cursor: pointer;
+}
+
+.menu_button i
+{
+    color: white;
+    transition: color 0.2s;
+}
+
+.menu_button i:hover 
+{
+    color: rgb(58, 214, 180);
 }
 
 .container
@@ -84,12 +110,11 @@ body
     align-items: center;
     justify-content: center;
 
-    padding: 22px 10px;
+    padding: 17px 0px;
 
     position: fixed;
 
-    width: 390px;
-    height: 8%;
+    width: 30%;
 
     border-radius: 25px;
     background: #161616;
@@ -140,12 +165,11 @@ body
     align-items: center;
     justify-content: center;
 
-    padding: 22px 10px;
+    padding: 15px;
 
     position: fixed;
 
-    width: 390px;
-    height: 8%;
+    width: 30%;
 
     border-radius: 25px;
     background: #161616;
@@ -161,6 +185,8 @@ body
 	transform: scale(1);
 	animation: pulse 2s infinite;
 }
+
+
 
 .choice_text_two:hover
 {
@@ -216,18 +242,44 @@ body
         width: 100%;
     }
 
+    .choice_text_one
+    {
+        width: 50%;
+    }
+
     .choice_two
     {
         width: 100%;
+    }
+
+    .choice_text_two
+    {
+        width: 50%;
     }
 
     .or
     {
         margin-top: 0px;
     }
+
+
 }
 
 @media only screen and (max-width: 768px)
 {
+    .choice_text_one
+    {
+        width: 70%;
+    }
 
+    .choice_text_two
+    {
+        width: 70%;
+    }
+
+    .menu_button
+{
+    margin-top: 5%;
+    margin-left: 5%;
+}
 }
