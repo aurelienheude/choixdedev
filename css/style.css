@@ -29,26 +29,68 @@ body
     height: 100%;
 }
 
+nav
+{
+    position: fixed;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 267px;
+    height: 100vh;
+
+    z-index: 1;
+
+    background: white;
+}
+
+nav ul
+{
+
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .menu_button
 {
     position: fixed;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     margin-top: 2%;
     margin-left: 2%;
-
-    background: none;
+    padding: 1%;
+    width: 35px;
+    height: 35px;
+    background: white;
     cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: color 0.2s;
 }
 
 .menu_button i
 {
-    color: white;
+    color: black;
     transition: color 0.2s;
 }
 
-.menu_button i:hover 
+.menu_button:hover i
 {
     color: rgb(58, 214, 180);
 }
