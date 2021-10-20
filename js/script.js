@@ -8,7 +8,7 @@ function menuOpen()
     if(menuWidth == 1)
     {
         menu.style.opacity = 1;
-        menu.style.width = "267px";
+        menu.style.width = "320px";
 
         wrapper.style.display = "flex";
     }
@@ -20,7 +20,7 @@ function menuClose()
 
     menuWidth = menu.offsetWidth;
 
-    if(menuWidth == 267)
+    if(menuWidth == 320)
     {
         menu.style.opacity = 0;
         menu.style.width = "1px";
