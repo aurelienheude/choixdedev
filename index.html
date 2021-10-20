@@ -14,38 +14,40 @@
 </head>
 
 <body>
-    <nav>
-        <div class="button_close">
-            <span>
-                <i class="fas fa-bars fa-1x"></i>
-            </span>
-        </div>
-        <ul>
-            <li><a href="">a</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-    
-        <div class="container_social">
-            <div class="span_my_network">
-                <span>Mes réseaux</span>
-                <div class="bar"></div>
+    <nav id="nav">
+        <div id="wrapper" class="wrapper">
+            <div class="button_close">
+                <span onclick="menuClose()">
+                    <i class="fas fa-times"></i>
+                </span>
             </div>
-
-            <div class="social_branding">
-                <div class="social_circles">
-                    <a href="https://github.com/aurelienheude"><i class="fab fa-github fa-1x"></i></a>
-                    <a href="https://www.youtube.com/channel/UCKmUJGNOCmyUM536IoucyEw"><i class="fab fa-youtube fa-1x"></i></a>
-                    <a href="https://twitter.com/Naka_officiel"><i class="fab fa-twitter fa-1x"></i></a>
-                    <a href="https://discord.com/invite/shcq9VsC6T"><i class="fab fa-discord fa-1x"></i></a>
+            <ul>
+                <li><a href=""><i class="fas fa-cloud fa-1x"></i><span>Proposer vos choix</span></a></li>
+                <li><a href=""><i class="fas fa-graduation-cap fa-1x"></i><span>Devenir Développer</span></a></li>
+                <li><a href=""><i class="fas fa-share-alt fa-1x"></i><span>Partager l'application</span></a></li>
+            </ul>
+        
+            <div class="container_social">
+                <div class="span_my_network">
+                    <span>Mes réseaux</span>
+                    <div class="bar"></div>
+                </div>
+    
+                <div class="social_branding">
+                    <div class="social_circles">
+                        <a href="https://github.com/aurelienheude"><i class="fab fa-github fa-1x"></i></a>
+                        <a href="https://www.youtube.com/channel/UCKmUJGNOCmyUM536IoucyEw"><i class="fab fa-youtube fa-1x"></i></a>
+                        <a href="https://twitter.com/Naka_officiel"><i class="fab fa-twitter fa-1x"></i></a>
+                        <a href="https://discord.com/invite/shcq9VsC6T"><i class="fab fa-discord fa-1x"></i></a>
+                    </div>
                 </div>
             </div>
+    
+            <p class="credit">Site réalisé par <a href="https://fr.fiverr.com/aureldev">Aurélien Heude</a> et inspiré par le site <a href="https://choixdemerde.fr/">choixdemerde.fr</a> réalisé par <a href="https://www.youtube.com/c/BenjaminCode">Benjamin Code</a>.</p>    
         </div>
+</nav>
 
-    </nav>
-
-    <span class="menu_button"><i class="fas fa-bars fa-2x"></i></span>
+    <span onclick="menuOpen()" class="menu_button"><i class="fas fa-bars fa-2x"></i></span>
     
 
     <div class="container">

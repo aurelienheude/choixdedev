@@ -36,21 +36,31 @@ nav
 {
     position: fixed;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 267px;
+    width: 1px;
     height: 100vh;
 
     z-index: 1;
+    opacity: 0;
 
     background: white;
+
+    transition-duration: 0.3s;
+}
+
+.wrapper
+{
+    display: none;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
 }
 
 nav ul
 {
-
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul li
@@ -61,18 +71,47 @@ nav ul li
 nav ul li a
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
+    height: 50px;
+    width: 100%;
+
+    background: #ffffff;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transition: background 0.3s, color 0.3s, border-bottom 0.3s, border-top 0.3s;
+}
+
+nav ul li a:hover
+{
+    background: #ebebeb;
+    color: black;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    border-top: 1px solid rgb(175, 175, 175);
+}
+nav ul li a i
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+nav ul li a span
+{
+    margin-left: 15px;
 }
 
 .button_close
 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
     padding-top: 15px;
-    padding-left: 15px;
+    padding-right: 15px;
     height: 50px;
 }
 
@@ -84,14 +123,19 @@ nav ul li a
 
     height: 30px;
     width: 30px;
-    padding: 3px;
+    padding: 1px;
     border-radius: 50%;
-    border: 3px solid #353535;
+    border: 2px solid #353535;
+    color: #353535;
+    background: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s, background 0.3s;
 }
 
-.button_close span i
+.button_close span:hover
 {
-    color: ;
+    background: #1f1f1f;
+    color: white;
 }
 
 .span_my_network
@@ -166,6 +210,26 @@ nav ul li a
     color: #181818;
 }
 
+.credit
+{
+    padding-left: 23px;
+    padding-right: 23px;
+
+    color: rgb(83, 83, 83);
+
+}
+
+.credit a
+{
+    color: #181818;
+    text-decoration: none;
+}
+
+.credit a:hover
+{
+    text-decoration: underline;
+}
+
 .menu_button
 {
     position: fixed;
@@ -179,9 +243,11 @@ nav ul li a
     padding: 12px;
     width: 35px;
     height: 35px;
+
+
+    opacity: 0.5;
     background: white;
     cursor: pointer;
-
     border-radius: 50%;
 
     transition: color 0.2s;
