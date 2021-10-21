@@ -35,27 +35,32 @@ body
 
 nav
 {
-    position: fixed;
-
-    width: 1px;
-    height: 100vh;
-
-    z-index: 1;
-    opacity: 0;
-
-    background: white;
-
-    transition-duration: 0.3s;
-}
-
-.wrapper
-{
-    display: none;
+    display: flex;
 
     flex-direction: column;
     justify-content: space-between;
 
+    position: fixed;
+
+    width: 320px;
     height: 100vh;
+
+    z-index: 1;
+
+    background: white;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.transition_menu
+{
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.open
+{
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 nav ul
@@ -300,6 +305,7 @@ nav ul li a span
     background: #181818;
 
     transition-duration: 0.4s;
+    z-index: 9000;
 }
 /**************************************************/
 /***************   CHOICE ONE   *******************/
@@ -314,9 +320,11 @@ nav ul li a span
     height: 100%;
     width: 50%;
 
-    background-image: url("../img/saucisson.jpg");
+    background-image: url("../img/java.jpg");
     background-size: cover;
     background-position: center;
+
+    transition-duration: 0.4s;
 }
 
 .choice_text_one
@@ -346,6 +354,10 @@ nav ul li a span
 	animation: pulse 2s infinite;
 }
 
+.choice_text_one:hover .choice_text_two
+{
+    opacity: 0;
+}
 /**************************************************/
 /***************   CHOICE TWO   *******************/
 /**************************************************/
@@ -359,8 +371,10 @@ nav ul li a span
     height: 100%;
     width: 50%;
 
-    background-image: url("../img/pain_au_chocolat.jpeg");
+    background-image: url("../img/boomer.jpg");
     background-size: cover;
+
+    transition-duration: 0.4s;
 }
 
 .choice_two img
