@@ -15,11 +15,11 @@
 
 <body>
 
-    <div class="loading">
+    <!-- loading -->
+    <div id="loading" class="loading">
         <h1>Choix suivant</h1>
     </div>
-    <!-- modale -->
-
+    <!------------>
     <nav id="nav">
             <div class="button_close">
                 <span id="buttonC">
@@ -49,7 +49,7 @@
             </div>
     
             <p class="credit">Site réalisé par <a href="https://fr.fiverr.com/aureldev">Aurélien Heude</a> et inspiré par le site <a href="https://choixdemerde.fr/">choixdemerde.fr</a> réalisé par <a href="https://www.youtube.com/c/BenjaminCode">Benjamin Code</a>.</p>    
-</nav>
+    </nav>
 
     <span id="buttonO" class="menu_button"><i class="fas fa-bars fa-2x"></i></span>
     
@@ -58,30 +58,31 @@
         <div id="or" class="or">
             <span>OU</span>
         </div>
+            <div id="nextChoice" class="button_next">
+                <p>Choix suivant</p><i class="far fa-arrow-alt-circle-right arrow_style"></i>
+            </div>
+
         <div id="choiceOne" class="choice_one">
             <div id="choiceOneText" class="choice_text_one">
                 <p class="p">Coder uniquement en JAVA</p>
-            </div>
-            
-            <div class="container_next">
-                <div id="nextChoice" class="shareChoice">
-
-                </div>
-                <div id="nextChoice" class="next">
-                    a
-                </div>
-            </div>
-
+            </div><!--
+            <div class="purcentage_vote">
+                <p>faux pourcentage de vote 78,4%</p>
+            </div>-->
         </div>
 
         <div id="choiceTwo" class="choice_two">
             <div id="choiceTwoText" class="choice_text_two">
                 <p>Etre un BOOMER</p>
-            </div>
+                
+            </div><!--
+            <div class="purcentage_vote">
+                <p>faux pourcentage de vote 78,4%</p>
+            </div>-->
         </div>
     </div>
 
-    
+
     <script src="js/script.js"></script>
 </body>
 
