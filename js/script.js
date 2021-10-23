@@ -57,7 +57,6 @@ window.addEventListener("load", () => {
     let choiceTwoText = document.getElementById("choiceTwoText");
     let or = document.getElementById("or");
     let nextChoice = document.getElementById("nextChoice");
-    let resultPurcentage = "78,56% (ceci est un faux pourcentage";
     let loading = document.getElementById("loading");
 /***   REVERSE OPACITY ON BLOC  ***/
 
@@ -88,6 +87,7 @@ window.addEventListener("load", () => {
             loading.style.transform = "translateY(0%)";
         });
 
+        
         if(isMobile)
         {
             or.style.height = "20%";
