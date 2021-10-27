@@ -382,6 +382,27 @@ nav ul li a span
 /***************   CHOICE ONE   *******************/
 /**************************************************/
 
+.choice_one input, .choice_two input
+{
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: color 0.3s;
+    text-align: center;
+}
+.choice_one input:hover, .choice_two input:hover
+{
+    color: #181818;
+}
+
+.choice_one input::placeholder, .choice_two input::placeholder
+{
+    text-align: center;
+}
+
 .choice_one
 {
     display: flex;
@@ -430,6 +451,7 @@ nav ul li a span
 {
     opacity: 0;
 }
+
 /**************************************************/
 /***************   CHOICE TWO   *******************/
 /**************************************************/

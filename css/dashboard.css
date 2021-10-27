@@ -1,0 +1,144 @@
+
+.dashboard
+{
+    background: #1e1e2e;
+    height: 100%;
+    padding: 2%;
+}
+
+.cards_stat
+{
+    display: flex;
+    flex-direction: column;
+    background: #27293d;
+
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+.cards_stat .header_cards_stat
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cards_stat .chart
+{
+    width: 100%!important;
+    height: 250px!important;
+    font-size: 20px!important;
+}
+
+.line_cards_info
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    column-gap: 2%;
+}
+
+.number_vote,.number_choice,.number_visitor
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 21.8%;
+    padding: 1% 1% 0% 1%;
+
+    border-radius: 5px;
+    background: #27293d;
+}
+
+.number_vote .circle_pic
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(0deg, rgba(32,142,116,1) 0%, rgba(67,200,210,1) 100%);
+    border-radius: 50%;
+}
+
+.number_choice .circle_pic
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(0deg, rgba(138,45,157,1) 0%, rgba(147,108,163,1) 100%);
+    border-radius: 50%;
+}
+
+.number_visitor .circle_pic
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(0deg, rgba(210,99,30,1) 0%, rgba(190,145,98,1) 100%);
+    border-radius: 50%;
+}
+.header_cards_info
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_cards_info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer_cards_info
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.bar
+{
+    height: 1px;
+    width: 100%;
+    
+    background: #ffffff0c;
+}
+
+.footer_cards_info a
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.footer_footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer_cards_info a:hover
+{
+    text-decoration: underline;
+}
+
+.footer_cards_info i
+{
+    margin-right: 3%;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    height: 100vh;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: #151620;
+}
+
+h1
+{
+    padding-top: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.form
+{   
+    width: 320px;
+    background: #27293d;
+    
+    -webkit-box-shadow: 10px 10px 0px 0px #343650;
+    -moz-box-shadow: 10px 10px 0px 0px #343650;
+    box-shadow: 10px 10px 0px 0px #343650;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.form_input
+{
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 70%;
+
+    outline: none;
+    border: none;
+    background: #171827;
+    color: white;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+.form_input:focus
+{
+    background: #11121d;
+}
+
+
+.submit_input
+{
+    margin-top: 5%;
+    margin-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    width: 42%;
+
+    border: none;
+    outline: none;
+    font-weight: 900;
+    color: white;
+    background: #11121d; 
+
+    box-shadow: 0px 0px 0px 0px #343650;
+
+    transition: color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.submit_input:hover
+{
+    color: #11121d;
+    background: #ffffff;
+    cursor: pointer;
+
+}
